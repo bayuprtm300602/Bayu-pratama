@@ -1,0 +1,197 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Profile Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .hover-grow {
+            transition: transform 0.3s;
+        }
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+        .tombol-keren {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .tombol-keren:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            transform: scale(1.05);
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.5);
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .card-header img {
+            border: 2px solid #ff416c;
+        }
+        .card-header h1 {
+            color: #ff416c;
+        }
+        .card-section {
+            margin-top: 1.5rem;
+        }
+        .card-section h2 {
+            color: #ff4b2b;
+        }
+        .card-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        .card-section ul li strong {
+            color: #ff416c;
+        }
+        .contact-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <video autoplay muted loop class="video-bg">
+   <source src="https://www.w3schools.com/howto/led.mp4" type="video/mp4">
+   Your browser does not support HTML5 video.
+  </video>
+  <div class="container mx-auto p-4 content">
+   <div class="card shadow-md rounded-lg p-6 hover-grow">
+    <div class="card-header">
+     <img alt="Cartoon image of a worker wearing a hard hat and holding a tool" class="w-24 h-24 rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/31PZHkjzBgMX8ZXQQZH3StKNne0gFnuJzrpGbsNhFhc.jpg" width="100"/>
+     <div>
+      <h1 class="text-2xl font-bold">
+       Bayu Pratama
+      </h1>
+      <p class="text-gray-600">
+       Teknisi Kalibrasi
+      </p>
+     </div>
+    </div>
+    <div class="card-section">
+     <h2 class="text-xl font-semibold">
+      Informasi Pribadi
+     </h2>
+     <ul class="mt-2 text-gray-700">
+      <li>
+       <strong>
+        Umur:
+       </strong>
+       22 tahun
+      </li>
+      <li>
+       <strong>
+        Status:
+       </strong>
+       Teknisi Kalibrasi
+      </li>
+      <li>
+       <strong>
+        Perusahaan:
+       </strong>
+       PT. Digital Akurasi Sistem
+      </li>
+      <li>
+       <strong>
+        No Telpon:
+       </strong>
+       08156141495
+      </li>
+     </ul>
+    </div>
+    <div class="card-section">
+     <h2 class="text-xl font-semibold">
+      Keahlian
+     </h2>
+     <ul class="mt-2 text-gray-700">
+      <li>
+       <strong>
+        1. Artificial Intelligence
+       </strong>
+      </li>
+      <li>
+       <strong>
+        2. Programmer
+       </strong>
+      </li>
+      <li>
+       <strong>
+        3. Konten Kreator
+       </strong>
+      </li>
+     </ul>
+    </div>
+    <div class="card-section">
+     <h2 class="text-xl font-semibold">
+      Kontak
+     </h2>
+     <p class="mt-2 text-gray-700">
+      Jika Anda ingin menghubungi saya, silakan klik tombol di bawah ini untuk mengirim pesan melalui WhatsApp.
+     </p>
+     <a class="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition contact-button" href="https://wa.me/628156141495?text=Halo%20Bayu%20Pratama,%20saya%20ingin%20menghubungi%20Anda" target="_blank">
+      <i class="fab fa-whatsapp">
+      </i>
+      Hubungi Saya
+     </a>
+    </div>
+   </div>
+   <div class="mt-6">
+    <ul class="space-y-4">
+     <li>
+      <a class="tombol-keren" href="Penjelasan artificial intelegen.html">
+       KLIK AI
+      </a>
+     </li>
+     <li>
+      <a class="tombol-keren" href="Penjelasan kalibrasi.html">
+       KLIK CALIBRATION
+      </a>
+     </li>
+     <li>
+      <a class="tombol-keren" href="Penjelasan programer.html">
+       KLIK PROGRAMER
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>
